@@ -1,0 +1,7 @@
+-- return "astrodark"
+-- return "ayu-mirage"
+-- return "dracula"
+-- return "gruvbox-material"
+return "no-clown-fiesta"
+-- return "onedark"
+-- return "spaceduck"

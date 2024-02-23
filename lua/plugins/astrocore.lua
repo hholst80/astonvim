@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
 -- NOTE: We highly recommend settig up the Lua Language Server (lua_ls) as this provides autocomplete and documentation while editing
@@ -25,11 +23,17 @@ return {
         spell = false, -- sets vim.opt.spell
         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
         wrap = false, -- sets vim.opt.wrap
+        -- guifont = "UbuntuMono Nerd Font",
+        -- guifont = "CaskaydiaCove NF SemiLight:h12",
+        guifont = "GoMono Nerd Font:h12",
+        -- guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait267-blinkoff267-blinkon267-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
+        guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait267-blinkoff267-blinkon267,sm:block-blinkwait175-blinkoff150-blinkon175"
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
+        neovide_cursor_trail_size = 0,
       },
     },
     -- Mappings can be configured through AstroCore as well.
