@@ -7,7 +7,6 @@ return {
   { "dracula/vim", lazy = false }, -- dracula
   { "navarasu/onedark.nvim", lazy = false },
   { "jacoborus/tender.vim", lazy = false },
-  { "nyoom-engineering/nyoom.nvim", lazy = false },
   { "Shatur/neovim-ayu", lazy = false }, -- ayu ayu-{dark,light,mirage}
   { "AlexvZyl/nordic.nvim", lazy = false },
   { "pineapplegiant/spaceduck", lazy = false },
