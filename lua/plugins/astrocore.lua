@@ -25,7 +25,9 @@ return {
         wrap = false, -- sets vim.opt.wrap
         -- guifont = "UbuntuMono Nerd Font",
         -- guifont = "CaskaydiaCove NF SemiLight:h12",
-        guifont = "GoMono Nerd Font:h12",
+        -- guifont = "GoMono Nerd Font:h12",
+        -- guifont = "NotoMono Nerd Font:h12",
+        guifont = "FantasqueSansM Nerd Font:h11.5",
         -- guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait267-blinkoff267-blinkon267-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175"
         guicursor = "n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait267-blinkoff267-blinkon267,sm:block-blinkwait175-blinkoff150-blinkon175"
       },
@@ -34,6 +36,8 @@ return {
         -- NOTE: `mapleader` and `maplocalleader` must be set in the AstroNvim opts or before `lazy.setup`
         -- This can be found in the `lua/lazy_setup.lua` file
         neovide_cursor_trail_size = 0,
+        neovide_hide_mouse_when_typing = true,
+        neovide_fullscreen = false,
       },
     },
     -- Mappings can be configured through AstroCore as well.
