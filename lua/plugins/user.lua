@@ -1,5 +1,3 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- Here are some examples:
 
@@ -7,13 +5,14 @@ if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 return {
 
   -- == Examples of Adding Plugins ==
+  "tpope/vim-surround",
 
-  "andweeb/presence.nvim",
-  {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
-  },
+  -- "andweeb/presence.nvim",
+  -- {
+  --   "ray-x/lsp_signature.nvim",
+  --   event = "BufRead",
+  --   config = function() require("lsp_signature").setup() end,
+  -- },
 
   -- == Examples of Overriding Plugins ==
 
@@ -52,7 +51,12 @@ return {
       luasnip.filetype_extend("javascript", { "javascriptreact" })
     end,
   },
-
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    opts = {
+      enabled = false
+    }
+  },
   {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)
