@@ -1,6 +1,7 @@
 -- AstroUI provides the basis for configuring the AstroNvim User Interface
 -- Configuration documentation can be found with `:h astroui`
 -- NOTE: We highly recommend settig up the Lua Language Server (lua_ls) as this provides autocomplete and documentation while editing
+if true then return {} end
 
 ---@type LazySpec
 return {
@@ -9,7 +10,8 @@ return {
   opts = {
     -- change colorscheme
     -- colorscheme = "astrodark",
-    colorscheme = "boo",
+    -- colorscheme = "boo",
+    colorscheme = "nordic",
     guifont = "CaskaydiaCove NF SemiLight:h12",
     -- AstroUI allows you to easily modify highlight groups easily for any and all colorschemes
     highlights = {
